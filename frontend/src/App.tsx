@@ -1,10 +1,10 @@
 import AppComponent from './components/layouts/AppComponent'
-import CatagoryManagement from './modules/category-management'
+import ElementTags from './modules/element-tags'
 
 const App = () => {
   return (
     <AppComponent>
-      <CatagoryManagement />
+      <ElementTags />
     </AppComponent>
   )
 }
