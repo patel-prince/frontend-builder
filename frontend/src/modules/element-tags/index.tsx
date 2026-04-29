@@ -8,7 +8,7 @@ const ElementTags = () => {
     <PageHeader
       title="Element Tags"
       description="List of all element tags in the system. You can create, edit, and delete tags to organize your elements."
-      icon={<Tags />}
+      icon={Tags}
       actions={
         <Button type="primary" icon={<Plus />}>
           Create

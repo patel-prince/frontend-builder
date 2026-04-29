@@ -67,6 +67,57 @@ body {
   padding: var(--padding-xxl);
 }
 
+.px-none {
+  padding-inline: 0;
+}
+.px-xxs {
+  padding-inline: var(--padding-xxs);
+}
+.px-xs {
+  padding-inline: var(--padding-xs);
+}
+.px-sm {
+  padding-inline: var(--padding-sm);
+}
+.px-md {
+  padding-inline: var(--padding-md);
+}
+.px-lg {
+  padding-inline: var(--padding-lg);
+}
+.px-xl {
+  padding-inline: var(--padding-xl);
+}
+.px-xxl {
+  padding-inline: var(--padding-xxl);
+}
+
+.py-none {
+  padding-block: 0;
+}
+.py-xxs {
+  padding-block: var(--padding-xxs);
+}
+.py-xs {
+  padding-block: var(--padding-xs);
+}
+.py-sm {
+  padding-block: var(--padding-sm);
+}
+.py-md {
+  padding-block: var(--padding-md);
+}
+.py-lg {
+  padding-block: var(--padding-lg);
+}
+.py-xl {
+  padding-block: var(--padding-xl);
+}
+.py-xxl {
+  padding-block: var(--padding-xxl);
+}
+
+
 .border {
   border: 1px solid var(--color-border);
 }
