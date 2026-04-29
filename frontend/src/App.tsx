@@ -1,10 +1,10 @@
 import AppComponent from './components/layouts/AppComponent'
-import ElementTags from './modules/element-tags'
+import { Outlet } from 'react-router-dom'
 
 const App = () => {
   return (
     <AppComponent>
-      <ElementTags />
+      <Outlet />
     </AppComponent>
   )
 }

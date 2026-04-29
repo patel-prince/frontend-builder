@@ -3,9 +3,10 @@ import { StrictMode } from 'react'
 import { ConfigProvider } from 'antd'
 import 'antd/dist/reset.css'
 import { createRoot } from 'react-dom/client'
+import { RouterProvider } from 'react-router-dom'
 
-import App from './App.tsx'
 import './index.css'
+import { router } from './router'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -25,7 +26,7 @@ createRoot(document.getElementById('root')!).render(
         },
       }}
     >
-      <App />
+      <RouterProvider router={router} />
     </ConfigProvider>
   </StrictMode>,
 )
