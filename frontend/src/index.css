@@ -11,10 +11,18 @@ body {
 
 .ant-btn-icon {
   line-height: 0;
-  svg {
-    width: 1.25em;
-    height: 1.25em;
-  }
+}
+
+.ant-btn:not(.ant-btn-icon-only) .ant-btn-icon svg {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.max-w-400 {
+  max-width: 400px;
+}
+.max-w-500 {
+  max-width: 500px;
 }
 
 .mt-none {
@@ -116,7 +124,6 @@ body {
 .py-xxl {
   padding-block: var(--padding-xxl);
 }
-
 
 .border {
   border: 1px solid var(--color-border);

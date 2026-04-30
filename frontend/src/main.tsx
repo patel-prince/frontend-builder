@@ -25,6 +25,9 @@ createRoot(document.getElementById('root')!).render(
           },
         },
       }}
+      space={{
+        size: 'medium',
+      }}
     >
       <RouterProvider router={router} />
     </ConfigProvider>

@@ -1,5 +1,6 @@
 import { Button } from 'antd'
-import { Plus, Tags } from 'lucide-react'
+import { Plus } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 import PageHeader from '../../components/layouts/PageHeader'
 
@@ -8,11 +9,12 @@ const ElementTags = () => {
     <PageHeader
       title="Element Tags"
       description="List of all element tags in the system. You can create, edit, and delete tags to organize your elements."
-      icon={Tags}
       actions={
-        <Button type="primary" icon={<Plus />}>
-          Create
-        </Button>
+        <Link to="create">
+          <Button type="primary" icon={<Plus />}>
+            Create
+          </Button>
+        </Link>
       }
     />
   )

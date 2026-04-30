@@ -2,6 +2,7 @@ import { type ComponentType, type ReactNode } from 'react'
 
 import { Button, Flex, Typography } from 'antd'
 import { ChevronLeft, type LucideProps } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 type PageHeaderProps = {
   title: string
@@ -10,15 +11,27 @@ type PageHeaderProps = {
   icon?: ComponentType<LucideProps>
   iconSize?: number
   onBack?: () => void
+  hasBack?: boolean
 }
 
-const PageHeader = ({ title, description, actions, icon, iconSize = 20, onBack }: PageHeaderProps) => {
+const PageHeader = ({
+  title,
+  description,
+  actions,
+  icon,
+  iconSize = 24,
+  onBack,
+  hasBack,
+}: PageHeaderProps) => {
   const HeaderIcon = icon ?? ChevronLeft
-  const leadingIcon = onBack ? (
-    <Button icon={<HeaderIcon size={iconSize} />} type="text" onClick={onBack} />
-  ) : icon ? (
-    <HeaderIcon size={iconSize} />
-  ) : null
+  const leadingIcon =
+    onBack || hasBack ? (
+      <Link to={'..'}>
+        <Button type='text' icon={<HeaderIcon size={iconSize} />} onClick={onBack} />
+      </Link>
+    ) : icon ? (
+      <HeaderIcon size={iconSize} />
+    ) : null
 
   return (
     <Flex className="border-bottom px-md py-sm" align="center" justify="space-between">
